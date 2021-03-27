@@ -1,0 +1,20 @@
+//screen resolutions
+$small: 375px;
+$medium: 768px;
+$desktop: 1024px;
+$large-desktop: 1440px;
+
+//mixins
+@mixin box-with-shadow {
+  background-color: #fff;
+  box-shadow: 0px 0px 3px 1px rgba(46, 46, 46, 0.15);
+  border-radius: 0.25rem;
+}
+
+@mixin blue-pill {
+  padding: 0.5rem 0.75rem;
+  background-color: #e7f3fa;
+  color: #397bb5;
+  border: none;
+  border-radius: 1rem;
+}
