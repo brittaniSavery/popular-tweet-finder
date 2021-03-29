@@ -1,6 +1,7 @@
 @import "./common.scss";
 @import "./filters.scss";
 @import "./search.scss";
+@import "./results.scss";
 
 .app {
   width: 100%;
@@ -29,7 +30,7 @@
 
   &-header,
   &-search {
-    margin: 0 1.5rem;
+    margin: 0 1rem;
 
     @media screen and (min-width: $desktop) {
       margin: unset;
@@ -37,11 +38,22 @@
   }
 
   &-filters {
+    margin-top: 1.25rem;
+
     @media screen and (min-width: $desktop) {
       position: absolute;
       top: 0;
-      right: 0;
-      width: 25%;
+      right: -1rem;
+      width: 30%;
+      margin-top: unset;
+    }
+  }
+
+  &-results {
+    margin-top: 1rem;
+
+    @media screen and (min-width: $desktop) {
+      margin-top: 1.25rem;
     }
   }
 

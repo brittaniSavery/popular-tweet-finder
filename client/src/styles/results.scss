@@ -1,0 +1,22 @@
+.results {
+  @include box-with-shadow;
+  padding-top: 0.5rem;
+
+  &-tweet {
+    padding: 0.5rem 1rem;
+
+    &:nth-child(even) {
+      background-color: #f8f9f9;
+    }
+  }
+}
+
+.tweet {
+  display: flex;
+
+  &-icon {
+    align-self: flex-start;
+    margin-right: 0.5rem;
+    border-radius: 2rem;
+  }
+}

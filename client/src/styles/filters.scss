@@ -4,6 +4,7 @@
 
   &-hashtag {
     @include blue-pill;
+    margin: 0.25rem;
     &:before {
       content: "#";
     }

@@ -5,7 +5,13 @@ export function Filters() {
     <div className="filters">
       <h2>Filter by hashtag</h2>
       <div className="filters-hashtags">
-        {["testA", "testB", "testC", "testD"].map((tag) => (
+        {[
+          "coding",
+          "Python",
+          "ComputerScience",
+          "gitmergememes",
+          "Engineering",
+        ].map((tag) => (
           <button key={tag} className="filters-hashtag">
             {tag}
           </button>

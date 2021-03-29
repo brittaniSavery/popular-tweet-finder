@@ -2,6 +2,7 @@ import "./styles/app.scss";
 
 import { Filters } from "./components/Filters";
 import { Search } from "./components/Search";
+import { Results } from "./components/Results";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
           <Filters />
         </div>
         <div className="app-results">
-          <Filters />
+          <Results />
         </div>
       </div>
     </div>
