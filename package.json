@@ -1,7 +1,7 @@
 {
-  "name": "science37-challenge",
+  "name": "popular-tweets-finder",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple SPA that finds all the popular tweets based on a keyword.",
   "main": "index.js",
   "scripts": {
     "start": "node server/index.js",
