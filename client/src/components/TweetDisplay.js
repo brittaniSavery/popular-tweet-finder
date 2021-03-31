@@ -1,4 +1,5 @@
 import React from "react";
+import Linkify from "linkifyjs/react";
 
 export function TweetDisplay({ tweet }) {
   return (
@@ -6,7 +7,12 @@ export function TweetDisplay({ tweet }) {
       <img src={tweet.author.icon} alt="" className="tweet-icon" />
       <div className="tweet-body">
         <h2>{tweet.author.name}</h2>
-        <p>{tweet.text}</p>
+        <Linkify
+          tagName="p"
+          options={{ className: "tweet-link", target: "_blank" }}
+        >
+          {tweet.text}
+        </Linkify>
         {tweet.hashtags.map((tag) => (
           <button key={tag} className="filters-hashtag">
             {tag}

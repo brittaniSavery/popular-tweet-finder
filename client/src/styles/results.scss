@@ -53,6 +53,18 @@
       content: "#";
     }
   }
+
+  &-link,
+  &-link:active {
+    color: $light-blue;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $light-blue;
+      text-decoration: underline;
+    }
+  }
 }
 
 .load-more {

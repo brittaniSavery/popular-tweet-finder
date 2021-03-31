@@ -8,8 +8,8 @@ export function Results({ tweets, filter, loading, error, onLoad }) {
 
   return (
     <div className="results">
-      {filteredTweets.map((tweet) => (
-        <div className="results-tweet">
+      {filteredTweets.map((tweet, index) => (
+        <div key={`result-${index}`} className="results-tweet">
           <TweetDisplay tweet={tweet} />
         </div>
       ))}

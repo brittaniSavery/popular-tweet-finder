@@ -8,9 +8,8 @@ import React, { useState } from "react";
 
 function App() {
   const [query, setQuery] = useState("");
-  const [page, setPage] = useState(1);
   const [filter, setFilter] = useState("");
-  const { tweets, error, isLoading } = useTweetSearch(query, page);
+  const { tweets, error, isLoading, page, setPage } = useTweetSearch(query);
 
   return (
     <div className="app">
