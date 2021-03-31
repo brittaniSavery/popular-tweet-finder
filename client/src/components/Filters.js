@@ -1,18 +1,16 @@
 import React from "react";
 
-export function Filters() {
+export function Filters({ tags, onChange }) {
   return (
     <div className="filters">
       <h2>Filter by hashtag</h2>
       <div className="filters-hashtags">
-        {[
-          "coding",
-          "Python",
-          "ComputerScience",
-          "gitmergememes",
-          "Engineering",
-        ].map((tag) => (
-          <button key={tag} className="filters-hashtag">
+        {tags.map((tag) => (
+          <button
+            key={tag}
+            className="filters-hashtag"
+            onClick={() => onChange(tag)}
+          >
             {tag}
           </button>
         ))}

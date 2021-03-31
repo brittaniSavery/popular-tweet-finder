@@ -9,14 +9,60 @@
       background-color: #f8f9f9;
     }
   }
+
+  &-loading {
+    margin: auto;
+  }
+
+  &-spinner {
+    height: 40px;
+    width: 40px;
+    border: 16px solid $grey;
+    border-top: 16px solid $light-blue;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 }
 
 .tweet {
   display: flex;
+
+  h2:before {
+    content: "@";
+  }
 
   &-icon {
     align-self: flex-start;
     margin-right: 0.5rem;
     border-radius: 2rem;
   }
+
+  &-hashtag {
+    @include blue-pill;
+    margin: 0.5rem;
+    &:before {
+      content: "#";
+    }
+  }
+}
+
+.load-more {
+  width: 100%;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  text-align: center;
+  color: $light-blue;
+  font-size: 0.85em;
+  cursor: pointer;
 }

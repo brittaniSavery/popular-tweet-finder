@@ -4,6 +4,10 @@ $medium: 768px;
 $desktop: 1024px;
 $large-desktop: 1440px;
 
+//colors
+$light-blue: #397bb5;
+$grey: #e7f3fa;
+
 //mixins
 @mixin box-with-shadow {
   background-color: #fff;
@@ -13,8 +17,8 @@ $large-desktop: 1440px;
 
 @mixin blue-pill {
   padding: 0.5rem 0.75rem;
-  background-color: #e7f3fa;
-  color: #397bb5;
+  background-color: $grey;
+  color: $light-blue;
   border: none;
   border-radius: 1rem;
 }
